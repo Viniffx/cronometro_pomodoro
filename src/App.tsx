@@ -2,8 +2,9 @@ import './styles/global.css';
 import './styles/theme.css';
 import {Heading} from './components/Heading';
 import {Container} from './components/Container';
-import {Logo} from './components/Logo'
+import {Logo} from './components/Logo';
 import { Menu } from './components/Menu';
+import { CountDown } from './components/CountDown';
 export function App(){
   return(
     <>
@@ -13,6 +14,23 @@ export function App(){
 
       <Container>
       <Menu/>
+      </Container>
+
+       <Container>
+      <CountDown/>
+      </Container>
+
+      <Container>
+        <form action=''>
+          <div>
+            <label htmlFor= "">task</label>
+            <input id = "meuInput" type = "text"/>
+          </div>
+          <div>
+            linha verde
+          </div>
+          <button>Enviar</button>
+        </form>
       </Container>
 
       <Container>
